@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario - SEMED</title>
+    <link rel="stylesheet" href="../static/registros.css">
+</head>
+<body>
+<header>
+
+    <div class="logo">SEMED</div>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="#">Manual de usuario</a></li>
+
+        <li><a href="#">Contacto</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+    <main>
+        <section class="registro-card">
+            <h1>Registro de Usuario</h1>
+            <p>Sistema de gestión de caducidades clínicas mediante semáforos.</p>
+
+            <form action="/registro" method="POST">
+                
+                <div>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div> 
+
+                <div style="display: flex; gap: 10px;">
+                    <div>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@hospital.com" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono de Contacto</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 310 000 000" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="area">Área / Servicio</label>
+                    <select id="area" name="area" required>
+                        <option value="" disabled selected>Seleccione un área</option>
+                        <option value="urgencias">Urgencias</option>
+                        <option value="pediatria">Pediatría</option>
+                        <option value="farmacia">Farmacia</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <div>
+                        <label for="pass">Contraseña</label>
+                        <input type="password" id="pass" name="password" placeholder="****" required>
+                    </div>
+                    <div>
+                        <label for="confirm_pass">Confirmar Contraseña</label>
+                        <input type="password" id="confirm_pass" name="confirm_password" placeholder="****" required>
+                    </div>
+                </div>
+
+                <div class= "checkbox-container">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">
+                        Acepto los <a href="#">términos y condiciones</a> y la política de privacidad de datos clínicos.
+                    </label>
+                </div>
+                <button type="submit">Crear cuenta</button>
+                    <br>
+                    <br>
+                    <p><a href="./index.html">← Volver al inicio de sesión</a></p>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
