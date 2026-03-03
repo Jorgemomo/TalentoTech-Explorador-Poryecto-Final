@@ -1,8 +1,6 @@
-
 /* Reset básico */
 
 * {
-
   margin: 0;
 
   padding: 0;
@@ -10,13 +8,11 @@
   box-sizing: border-box;
 
   font-family: Arial, sans-serif;
-
 }
 
 /* Barra superior */
 
 header {
-
   display: flex;
 
   justify-content: space-between;
@@ -28,194 +24,187 @@ header {
   padding: 15px 40px;
 
   border-bottom: 1px solid #ddd;
-
 }
 
 header .logo {
-
   font-size: 20px;
 
   font-weight: bold;
 
   color: #004080;
-
 }
 
 header nav ul {
-
   list-style: none;
 
   display: flex;
 
   gap: 20px;
-
 }
 
 header nav ul li a {
-
   text-decoration: none;
 
   color: #333;
 
   font-weight: 500;
-
 }
 
 header nav ul li .btn-register {
-    background-color: #0077b6;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.3s;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 header nav ul li .btn-register:hover {
-    background-color: #005f91;
+  background-color: #005f91;
 }
 
 /* --- Estilos Registro en SEMED --- */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f8fafc;
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Contenedor*/
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    min-height: calc(100vh - 70px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
 }
-
-
 
 /* Contenedor principal del formulario */
 .registro-card {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
-    width: 100%;
-    max-width: 520px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 520px;
 }
 
 h1 {
-    color: #1a202c;
-    font-size: 26px;
-    margin-bottom: 5px;
+  color: #1a202c;
+  font-size: 26px;
+  margin-bottom: 5px;
 }
 
 .descripcion {
-    color: #718096;
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 25px;
-    line-height: 1.5;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 /* Organización de filas (Email/Teléfono y Contraseñas) */
 .form-row {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group {
-    margin-bottom: 15px;
-    flex: 1;
+  margin-bottom: 15px;
+  flex: 1;
 }
 
 label {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: #4a5568;
-    line-height: 1.4;
-    margin-bottom: 6px;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+  line-height: 1.4;
+  margin-bottom: 6px;
 }
 
 /* Inputs, Selects y Textareas */
-input, select {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #fdfdfd;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
+input,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
-input:focus, select:focus {
-    outline: none;
-    border-color: #3182ce;
-    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
 }
 
 /* Estilo para el Checkbox de Términos */
 .checkbox-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-    margin: 20px 0;
-    font-size: 13px;
-    color: #4a5568;
-    width: 100%;
-    text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #4a5568;
+  width: 100%;
+  text-align: left;
 }
 
 .checkbox-container input {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    flex-shrink: 0;
-    margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin: 0;
 }
-.checkbox-conainer label{
-    font-weight: normal;
-    cursor: pointer;
-    line-height: 1.4;
+.checkbox-conainer label {
+  font-weight: normal;
+  cursor: pointer;
+  line-height: 1.4;
 }
 
 /* Botón Azul Principal */
 .btn-registrar {
-    width: 100%;
-    background-color: #0077b6;
-    color: white;
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    transition: background 0.2s;
+  width: 100%;
+  background-color: #0077b6;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
 }
 
 .btn-registrar:hover {
-    background-color: #005f91;
+  background-color: #005f91;
 }
 
 /* Enlace inferior */
 .back-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #718096;
-    text-decoration: none;
-    font-size: 14px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #718096;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .back-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
