@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!btnSubmit) return;
         btnSubmit.disabled = loading;
         btnSubmit.textContent = loading
-            ? "⏳ Registrando..."
-            : "💊 Registrar medicamento 💊";
+            ? " Registrando..."
+            : " Registrar medicamento ";
         btnSubmit.style.opacity = loading ? "0.6" : "1";
     }
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
 
             const datosMedicamento = {
-                // ✅ email del usuario en sesión para vincular el medicamento
+                // email del usuario en sesión para vincular el medicamento
                 email_usuario:     sesion.email,
                 nombre:            document.getElementById("nombre").value.trim(),
                 lote:              document.getElementById("lote").value.trim(),
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Validación de fecha en el cliente
             const errorFecha = validarFecha(datosMedicamento.fecha_vencimiento);
             if (errorFecha) {
-                alert("⚠️ " + errorFecha);
+                alert(errorFecha);
                 return;
             }
 
@@ -76,11 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 const data = await response.json();
 
                 if (response.ok) {
-                    alert("✅ " + data.mensaje);
+                    alert(data.mensaje);
                     formMedicamento.reset();
                     window.location.href = "./dashboard.html";
                 } else {
-                    alert("❌ Error al registrar: " + (data.error || "Error desconocido"));
+                    alert("Error al registrar: " + (data.error || "Error desconocido"));
                 }
             } catch (error) {
                 console.error("Error en la conexión:", error);
