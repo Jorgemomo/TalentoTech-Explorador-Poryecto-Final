@@ -29,5 +29,8 @@ El objetivo es reducir el consumo accidental de medicamentos vencidos y mejorar 
 - CSS3
 - JavaScript
 - Git & GitHub
+- Python
+- SQLite3
+- Flask
 
 ## 📂 Estructura del Proyecto
